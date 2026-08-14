@@ -1,0 +1,15 @@
+**Compiling:** Use `forge build` or `forge compile` to turn your smart contract
+ code into machine-readable bytecode.
+
+**Testing:** Use `forge test` to execute your test scripts (typically files ending
+ in `.t.sol`) and verify your contract logic.
+
+**Deploying:** Use `forge script script/ContractName.s.sol` to run your deployment
+ scripts. For live or test networks, you must include the `--broadcast` flag to submit
+  the transactions.
+
+**Note on Network Connectivity:**
+Using the `--rpc-url` flag is critical because it connects your local environment to the 
+specific blockchain network you are targeting. This allows your scripts to read the
+network's current state and correctly interact with existing addresses, such as price 
+feeds or other deployed infrastructure.
