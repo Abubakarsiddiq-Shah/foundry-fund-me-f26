@@ -21,8 +21,8 @@ contract FundMeTest is Test{
         assertEq(fundMe.i_owner(), address(this)); //Checking if the owner of the contract is the same as the msg.sender
    }
 
-   function testPriceversionIsAccurate() public{
+   function testPriceFeedVersionIsAccurate() public{
       uint256 version = fundMe.getVersion(); //Getting the version of the contract
-      assertEq(fundMe.version(), 4); //Checking if the version of the contract is equal to 4
+      assertEq(version, 4); //Checking if the version of the contract is equal to 4
    }
 }
